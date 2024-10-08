@@ -13,7 +13,7 @@ A web application built with React that helps users find public restrooms in the
 
 ## Demo
 
-You can view the live application [here](https://gurpreetsingh-21.github.io/Public-Restroom-Finder).
+You can view the live application [here](https://gurpreetsingh-21.github.io/Public-Restroom-Finder/).
 
 ## Features
 
