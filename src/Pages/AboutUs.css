@@ -1,0 +1,89 @@
+.about-us-body {
+  background-image: url(../assets/pan-xiaozhen-OKlo0r3gBcQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #ffffff;
+}
+
+.about-us-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 90%;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333333;
+  font-family: 'Georgia', serif;
+}
+
+.about-us-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555555;
+  margin-bottom: 2rem;
+}
+
+.about-us-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.about-us-container ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-us-container ul li::marker {
+  color: #134B70;
+}
+
+@media (max-width: 767px) {
+  .about-us-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .about-us-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-us-container p {
+    font-size: 1rem;
+  }
+
+  .about-us-container ul li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us-container {
+    padding: 30px;
+  }
+
+  .about-us-container h2 {
+    font-size: 2.8rem;
+  }
+
+  .about-us-container p {
+    font-size: 1.2rem;
+  }
+
+  .about-us-container ul li {
+    font-size: 1.1rem;
+  }
+}
