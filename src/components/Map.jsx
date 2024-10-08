@@ -205,11 +205,11 @@ const Map = ({ setPopupContent, setShowPopup, setPopupPosition }) => {
         <div className="container">
             <div className="map" ref={mapRef} style={{ height: '500px' }}></div>
             <div>
-                <h3 className='text-h3'>Closest Bathrooms:  </h3>
-                <ul >
+                <h3 className='text-h3'>Closest Bathrooms:</h3>
+                <ul>
                     {closestBathrooms.map((bathroom, index) => (
                         <li key={index}>
-                            {bathroom.name} - {bathroom.distance.toFixed(2)} miles away :    <br/>
+                            {bathroom.name} - {bathroom.distance.toFixed(2)} miles away: <br />
                             <button className='navigo' onClick={() => navigateToBathroom(bathroom)}> Go </button>
                         </li>
                     ))}
@@ -220,35 +220,27 @@ const Map = ({ setPopupContent, setShowPopup, setPopupPosition }) => {
             </button>
             {addingRestroom && (
                 <div className="restroom-form">
-                    <form onSubmit={(e) => { e.preventDefault(); handleAddRestroom(); }}>
-                        <label >
-                            Name:
-                            <input
-                                type="text"
-                                value={newRestroom.name}
-                                onChange={(e) => setNewRestroom({ ...newRestroom, name: e.target.value })}
-                                required
-                            />
-                        </label>
-                        <label >
-                            Hours:
-                            <input
-                                type="text"
-                                value={newRestroom.hours}
-                                onChange={(e) => setNewRestroom({ ...newRestroom, hours: e.target.value })}
-                                required
-                            />
-                        </label>
-                        <label >
-                            Days:
-                            <input
-                                type="text"
-                                value={newRestroom.days}
-                                onChange={(e) => setNewRestroom({ ...newRestroom, days: e.target.value })}
-                                required
-                            />
-                        </label>
-                        <button type="submit">Add Restroom</button>
+                    <form onSubmit={handleAddRestroom}>
+                        <label>Name:</label>
+                        <input
+                            type="text"
+                            value={newRestroom.name}
+                            onChange={(e) => setNewRestroom({ ...newRestroom, name: e.target.value })}
+                            required
+                        />
+                        <label>Hours:</label>
+                        <input
+                            type="text"
+                            value={newRestroom.hours}
+                            onChange={(e) => setNewRestroom({ ...newRestroom, hours: e.target.value })}
+                        />
+                        <label>Days:</label>
+                        <input
+                            type="text"
+                            value={newRestroom.days}
+                            onChange={(e) => setNewRestroom({ ...newRestroom, days: e.target.value })}
+                        />
+                        <button type="submit" className='addroom'>Add Restroom</button>
                     </form>
                 </div>
             )}
