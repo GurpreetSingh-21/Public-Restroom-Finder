@@ -108,8 +108,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.find-button,
-.emergency-button {
+.find-button {
   margin-top: 10px;
   margin-right: 30px;
   border-radius: 8px;
@@ -130,15 +129,6 @@ body {
 
 .find-button:hover {
   background-color: #45a049;
-  transform: scale(1.05);
-}
-
-.emergency-button {
-  background-color: #f44336;
-}
-
-.emergency-button:hover {
-  background-color: #d32f2f;
   transform: scale(1.05);
 }
 

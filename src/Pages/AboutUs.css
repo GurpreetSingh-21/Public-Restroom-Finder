@@ -9,24 +9,32 @@
   align-items: center;
   margin: 0;
   color: #ffffff;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
 }
 
 .about-us-container {
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px;
-  border-radius: 15px;
+  padding: 20px;
+  border-radius: 15px 15px 15px 15px;
   max-width: 800px;
   width: 90%;
-  margin: 30px;
+  height: auto;
+  margin: 30px auto;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-us-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
 .about-us-container h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #333333;
-  font-family: 'Georgia', serif;
 }
 
 .about-us-container p {

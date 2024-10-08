@@ -102,11 +102,6 @@ function Home() {
               <h4>Maps Integration</h4>
               <p>Get directions to the nearest public restroom facility quickly.</p>
             </div>
-            <div className="feature-card-4">
-              <img src={ambulanceIcon} alt="Emergency Mode" className="feature-icon" />
-              <h4>Emergency Mode</h4>
-              <p>Quick access to the nearest restroom regardless of ratings.</p>
-            </div>
           </div>
         </section>
 
